@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Individual Project</string>
+    <string name="clear">Clear</string>
+    <string name="submit">Submit</string>
+    <string name="_0">0</string>
+    <string name="selected_numbers">Selected Numbers:</string>
+    <string name="compose_the_number">Compose the number:</string>
+    <string name="compose_the_numbers">Compose the numbers:</string>
+    <string name="welcome_to_math_hell">Welcome to Math Hell</string>
+    <string name="welcome_to_the_learning_app">Welcome to the Learning App</string>
+    <string name="welcome_to_the_math_app">Welcome to the Math Hell</string>
+    <string name="compare_button">Compare Button</string>
+    <string name="compose_number">Compose Number</string>
+    <string name="compare_number">Compare Number</string>
+    <string name="order_number">Order Number</string>
+    <string name="question_count">Question: %1$d/%2$d</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="question">Question:</string>
+    <string name="is_19_greater_than_87">Is 19 greater than 87</string>
+</resources>

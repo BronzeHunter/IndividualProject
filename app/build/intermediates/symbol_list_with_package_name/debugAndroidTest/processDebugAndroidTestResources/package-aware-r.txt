@@ -1,0 +1,3 @@
+com.utar.individualproject.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

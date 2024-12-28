@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\drawable_nut.png.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\drawable\\nut.png"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\font_schoolbell.xml.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\font\\schoolbell.xml"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\drawable_apple.png.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\drawable\\apple.png"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\layout_activity_composing_numbers.xml.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\layout\\activity_composing_numbers.xml"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\drawable_cloud.png.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\drawable\\cloud.png"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\layout_activity_compare_numbers.xml.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\layout\\activity_compare_numbers.xml"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\drawable_pear.webp.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\drawable\\pear.webp"
+    },
+    {
+        "merged": "com.utar.individualproject.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "com.utar.individualproject.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\drawable_background.jpg.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\drawable\\background.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-debug-4:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Михаил\\.gradle\\daemon\\8.4\\com.utar.individualproject.app-main-6:\\mipmap-xhdpi\\ic_launcher.webp"
+    }
+]
