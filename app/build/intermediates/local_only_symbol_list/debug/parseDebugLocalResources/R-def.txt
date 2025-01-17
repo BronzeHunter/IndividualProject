@@ -20,6 +20,7 @@ id button3
 id button4
 id comparingNumbersButton
 id composingNumbersButton
+id exitButton
 id instructionTextView
 id levelTextView
 id noButton

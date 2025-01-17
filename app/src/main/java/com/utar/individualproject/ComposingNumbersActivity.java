@@ -32,6 +32,18 @@ public class ComposingNumbersActivity extends AppCompatActivity {
         TextView instructionTextView = findViewById(R.id.instructionTextView);
 
         askQuestion(num1Layout, num2Layout, instructionTextView);
+
+        // Обработчик кнопки выхода
+        Button exitButton = findViewById(R.id.exitButton);
+        exitButton.setOnClickListener(v -> finish());
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (countDownTimer != null) {
+            countDownTimer.cancel(); // Остановка таймера при уничтожении активности
+        }
     }
 
     @SuppressLint("SetTextI18n")
@@ -53,8 +65,8 @@ public class ComposingNumbersActivity extends AppCompatActivity {
         TextView questionCountTextView = findViewById(R.id.questionCountTextView);
         TextView levelTextView = findViewById(R.id.levelTextView);
         TextView timerTextView = findViewById(R.id.timerTextView);
-        questionCountTextView.setText("Question: " + questionCount + "/5");
-        levelTextView.setText("Level: " + level);
+        questionCountTextView.setText("Вопрос: " + questionCount + "/5");
+        levelTextView.setText("Уровень: " + level);
         questionCount++;
 
         String operation = getOperation();
@@ -91,7 +103,7 @@ public class ComposingNumbersActivity extends AppCompatActivity {
             case "addition":
                 return num1 + num2;
             case "subtraction":
-                return num1 - num2;
+                return Math.abs(num1 - num2); // Разница по модулю
             case "multiplication":
                 return num1 * num2;
             case "division":
