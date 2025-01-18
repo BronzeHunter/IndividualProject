@@ -71,29 +71,57 @@ public class ComposingNumbersActivity extends AppCompatActivity {
 
         String operation = getOperation();
         int rangeMultiplier = (operation.equals("multiplication") || operation.equals("division")) ? 2 : 5;
-        int range = Math.min(level * rangeMultiplier, 20);
+        int range = Math.min(level * rangeMultiplier, 10); // Ограничиваем диапазон значений для деления
 
-        int num1 = random.nextInt(range) + 1;
-        int num2 = random.nextInt(range) + 1;
+        int num1, num2, correctAnswer;
 
-        int correctAnswer = calculateAnswer(num1, num2, operation);
+        // Генерация чисел в зависимости от операции
+        if (operation.equals("division")) {
+            num2 = random.nextInt(range - 1) + 1; // Второе число от 1 до range
+            int multiplier = random.nextInt(5) + 1; // Умножаем на случайное число от 1 до 5
+            num1 = num2 * multiplier; // Первое число кратно второму
+        } else {
+            num1 = random.nextInt(range) + 1;
+            num2 = random.nextInt(range) + 1;
+        }
 
+        // Рассчитываем правильный ответ
+        correctAnswer = calculateAnswer(num1, num2, operation);
+
+        // Устанавливаем текст инструкции
         instructionTextView.setText(getInstructionText(operation));
 
+        // Проверяем, что ответ корректен
+        if (operation.equals("division") && (num1 < num2 || correctAnswer * num2 != num1)) {
+            // Если деление некорректно, регенерируем вопрос
+            askQuestion(num1Layout, num2Layout, instructionTextView);
+            return;
+        }
+
+        // Заполняем макет изображениями
         populateImages(num1Layout, num1, num2);
         populateImages(num2Layout, num2, num1);
 
+        // Отображаем кнопки с ответами
         displayButtons(correctAnswer);
 
+        // Запускаем таймер
         startTimer(timerTextView, num1Layout, num2Layout, instructionTextView, correctAnswer);
     }
 
+
+
     private String getOperation() {
         if (level >= 5) {
-            return random.nextBoolean() ? "division" : random.nextBoolean() ? "multiplication" : "addition";
+            // На уровнях 5+ включаем деление, умножение и сложение
+            int operationChoice = random.nextInt(3); // 0 - division, 1 - multiplication, 2 - addition
+            return operationChoice == 0 ? "division" : operationChoice == 1 ? "multiplication" : "addition";
         } else if (level >= 3) {
-            return random.nextBoolean() ? "multiplication" : random.nextBoolean() ? "addition" : "subtraction";
+            // На уровнях 3-4: умножение, сложение и вычитание
+            int operationChoice = random.nextInt(3); // 0 - multiplication, 1 - addition, 2 - subtraction
+            return operationChoice == 0 ? "multiplication" : operationChoice == 1 ? "addition" : "subtraction";
         } else {
+            // На уровнях 1-2: сложение и вычитание
             return random.nextBoolean() ? "addition" : "subtraction";
         }
     }
@@ -107,11 +135,10 @@ public class ComposingNumbersActivity extends AppCompatActivity {
             case "multiplication":
                 return num1 * num2;
             case "division":
-                if (num1 % num2 == 0) {
-                    return num1 / num2;
-                } else {
-                    return calculateAnswer(num1, num2, "addition");
-                }
+                // Генерация чисел для деления так, чтобы результат всегда был целым числом
+                num1 = (random.nextInt(10) + 1) * (random.nextInt(10) + 1); // Генерация кратного числа
+                num2 = random.nextInt(10) + 1;
+                return num1 / num2;
             default:
                 return 0;
         }
@@ -169,14 +196,16 @@ public class ComposingNumbersActivity extends AppCompatActivity {
         buttons[3] = findViewById(R.id.button4);
 
         int correctButtonIndex = random.nextInt(4);
+        int rangeForWrongAnswers = level >= 3 ? 30 : 10; // Диапазон неправильных ответов: 30 для уровня 3+, иначе 10.
+
         for (int i = 0; i < 4; i++) {
             if (i == correctButtonIndex) {
                 buttons[i].setText(String.valueOf(correctAnswer));
             } else {
                 int randomAnswer;
                 do {
-                    randomAnswer = random.nextInt(10) + 1;
-                } while (randomAnswer == correctAnswer);
+                    randomAnswer = random.nextInt(rangeForWrongAnswers) + 1; // Неправильные ответы в заданном диапазоне.
+                } while (randomAnswer == correctAnswer); // Убеждаемся, что ответ не совпадает с правильным.
                 buttons[i].setText(String.valueOf(randomAnswer));
             }
             int finalI = i;

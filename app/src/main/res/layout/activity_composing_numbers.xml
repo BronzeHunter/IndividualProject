@@ -57,29 +57,32 @@
 
     <!-- Первое число -->
     <GridLayout
-        android:id="@+id/num1Layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:columnCount="4"
-        android:rowCount="1"
-        app:layout_constraintTop_toBottomOf="@id/instructionTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+    	android:id="@+id/num1Layout"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="16dp"
+    	android:layout_marginBottom="32dp"
+    	android:columnCount="4"
+    	android:rowCount="1"
+    	app:layout_constraintTop_toBottomOf="@id/instructionTextView"
+    	app:layout_constraintStart_toStartOf="parent"
+    	app:layout_constraintEnd_toEndOf="parent"
+    	app:layout_constraintVertical_bias="0.1" />
 
     <!-- Второе число -->
     <GridLayout
-        android:id="@+id/num2Layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:columnCount="4"
-        android:rowCount="1"
-        app:layout_constraintTop_toBottomOf="@id/num1Layout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+    	android:id="@+id/num2Layout"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="16dp"
+    	android:columnCount="4"
+    	android:rowCount="1"
+    	app:layout_constraintTop_toBottomOf="@id/num1Layout"
+    	app:layout_constraintStart_toStartOf="parent"
+    	app:layout_constraintEnd_toEndOf="parent"
+    	app:layout_constraintVertical_bias="0.1" />
+
+
 
     <!-- Кнопки для ответа -->
     <LinearLayout

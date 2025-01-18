@@ -100,42 +100,62 @@ public class CompareNumbersActivity extends AppCompatActivity {
             // Для уровней 1-2: без операций
             operation1 = "";
             operation2 = "";
-        } else if (level <= 6) {
-            // Для уровней 3-6: сложение и вычитание
+        } else if (level <= 4) {
+            // Для уровней 3-4: сложение и вычитание
             operation1 = random.nextBoolean() ? "+" : "-";
             operation2 = random.nextBoolean() ? "+" : "-";
+        } else if (level <= 6) {
+            // Для уровней 5-6: добавляем умножение
+            operation1 = getRandomOperation("+", "-", "*");
+            operation2 = getRandomOperation("+", "-", "*");
         } else if (level <= 9) {
-            // Для уровней 7-9: сложение, вычитание и умножение
-            operation1 = random.nextBoolean() ? "+" : (random.nextBoolean() ? "-" : "*");
-            operation2 = random.nextBoolean() ? "+" : (random.nextBoolean() ? "-" : "*");
+            // Для уровней 7-9: добавляем деление
+            operation1 = getRandomOperation("+", "-", "*", "/");
+            operation2 = getRandomOperation("+", "-", "*", "/");
         } else {
-            // Для уровня 10 и выше: все операции (+, -, *, /)
-            operation1 = random.nextBoolean() ? "+" : (random.nextBoolean() ? "-" : (random.nextBoolean() ? "*" : "/"));
-            operation2 = random.nextBoolean() ? "+" : (random.nextBoolean() ? "-" : (random.nextBoolean() ? "*" : "/"));
+            // Уровень 10: завершаем игру
+            showFinalDialog();
         }
     }
+
+    private String getRandomOperation(String... operations) {
+        Random random = new Random();
+        return operations[random.nextInt(operations.length)];
+    }
+
 
     private void generateRandomNumbers() {
         Random random = new Random();
         int range = level * 5; // повышается диапазон с каждым уровнем
-        num1 = random.nextInt(range);
-        num2 = random.nextInt(range);
-        num3 = random.nextInt(range);
-        num4 = random.nextInt(range);
+        num1 = random.nextInt(range) + 1; // Убедиться, что числа не равны 0
+        num2 = random.nextInt(range) + 1;
 
         // Убедиться, что числа для первого выражения разные
         while (num1 == num2) {
-            num1 = random.nextInt(range);
-        }
-        // Убедиться, что числа для второго выражения разные
-        while (num3 == num4) {
-            num3 = random.nextInt(range);
+            num1 = random.nextInt(range) + 1;
         }
 
-        // Дополнительная проверка на одинаковые числа в обоих выражениях
-        while ((num1 == num3 && num2 == num4) || (num1 == num4 && num2 == num3)) {
-            num3 = random.nextInt(range);
-            num4 = random.nextInt(range);
+        // Убедиться, что числа для второго выражения разные
+        while (num3 == num4) {
+            num3 = random.nextInt(range) + 1;
+            num4 = random.nextInt(range) + 1;
+        }
+
+        // Для уровней с делением: числа должны делиться нацело, и первое больше второго
+        if (level >= 1) {
+            num1 = random.nextInt(range) + 1; // Обновляем числа для деления
+            num2 = random.nextInt(range / 2) + 1; // Гарантируем, что второе меньше
+            while (num1 % num2 != 0) {
+                num1 = random.nextInt(range) + 1;
+                num2 = random.nextInt(range / 2) + 1;
+            }
+
+            num3 = random.nextInt(range) + 1;
+            num4 = random.nextInt(range / 2) + 1;
+            while (num3 % num4 != 0) {
+                num3 = random.nextInt(range) + 1;
+                num4 = random.nextInt(range / 2) + 1;
+            }
         }
     }
 
