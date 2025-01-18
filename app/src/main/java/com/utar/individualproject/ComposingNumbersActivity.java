@@ -49,7 +49,7 @@ public class ComposingNumbersActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void askQuestion(GridLayout num1Layout, GridLayout num2Layout, TextView instructionTextView) {
         if (questionCount == 6) {
-            if (incorrectAnswersCount >= 2) {
+            if (incorrectAnswersCount >= 3) {
                 showFailedDialog();
                 return;
             }

@@ -51,7 +51,7 @@ public class CompareNumbersActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void askQuestion(TextView questionTextView) {
         if (questionCount == 6) { // достигнуто ли максимальное количество вопросов
-            if (incorrectAnswersCount >= 2) {
+            if (incorrectAnswersCount >= 3) {
                 showFailedDialog();
                 return;
             }
