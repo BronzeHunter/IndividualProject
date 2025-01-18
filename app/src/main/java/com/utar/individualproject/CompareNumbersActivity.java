@@ -214,7 +214,16 @@ public class CompareNumbersActivity extends AppCompatActivity {
 
             public void onFinish() {
                 incorrectAnswersCount++;
-                Toast.makeText(CompareNumbersActivity.this, "Время вышло!", Toast.LENGTH_SHORT).show();
+
+                // Вычисление правильного ответа
+                int result1 = calculateExpressionResult(num1, num2, operation1);
+                int result2 = calculateExpressionResult(num3, num4, operation2);
+                boolean correctAnswer = isGreaterThanQuestion ? result1 > result2 : result1 < result2;
+
+                String correctAnswerText = correctAnswer ? "Да" : "Нет";
+                Toast.makeText(CompareNumbersActivity.this, "Время вышло! Правильный ответ: " + correctAnswerText, Toast.LENGTH_LONG).show();
+
+                // Задать следующий вопрос
                 askQuestion(findViewById(R.id.questionTextView));
             }
         }.start();
